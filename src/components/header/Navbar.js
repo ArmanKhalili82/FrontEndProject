@@ -18,16 +18,16 @@ const Navbar = () => {
         <div className='collapse navbar-collapse justify-content-end text-uppercase font-weight-bold' id='myNavbar'>
             <ul className='navbar-nav'>
                 <li className='nav-item'>
-                    <Link to='/'>Home</Link>
+                    <Link className='menu-item' to='/'>Home</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/Shop'>Shop</Link>
+                    <Link className='menu-item' to='/Shop'>Shop</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/Services'>Services</Link>
+                    <Link className='menu-item' to='/Services'>Services</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/About'>About Us</Link>
+                    <Link className='menu-item' to='/About'>About Us</Link>
                 </li>
             </ul>
         </div>

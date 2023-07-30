@@ -6,7 +6,7 @@ import Footer from '../components/footer/Footer'
 const Services = () => {
   return (
     <div>
-        
+        <h1>Services</h1>
     </div>
   )
 }
