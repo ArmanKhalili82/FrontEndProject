@@ -1,10 +1,20 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
-
+import Shop from '../../pages/Shop'
+import Services from '../../pages/Services'
+import About from '../../pages/About'
 
 const Navbar = () => {
   return (
-    <nav className='navbar navbar-expand-lg fixed-top nav-menu'>
+    <div>
+        <Routes>
+            <Route path='/Shop' element={<Shop />} />
+            <Route path='/Services' element={<Services />} />
+            <Route path='/About' element={<About />} />
+        </Routes>
+        <nav className='navbar navbar-expand-lg fixed-top nav-menu'>
         <a href='#' className='navbar-brand text-light text-uppercase'><span className='h2 font-weight-bold'>Shoppify</span></a>
         <button className='navbar-toggler nav-button' type='button' data-bs-toggle='collapse' 
         data-bs-target='#myNavbar'>
@@ -15,20 +25,21 @@ const Navbar = () => {
         <div className='collapse navbar-collapse justify-content-end text-uppercase font-weight-bold' id='myNavbar'>
             <ul className='navbar-nav'>
                 <li className='nav-item'>
-                    <a href='#' className='nav-link m-2 menu-item'>Home</a>
+                    <Link to='/'>Home</Link>
                 </li>
                 <li className='nav-item'>
-                    <a href='#' className='nav-link m-2 menu-item'>Shop</a>
+                    <Link to='/Shop'>Shop</Link>
                 </li>
                 <li className='nav-item'>
-                    <a href='#' className='nav-link m-2 menu-item'>Services</a>
+                    <Link to='/Services'>Services</Link>
                 </li>
                 <li className='nav-item'>
-                    <a href='#' className='nav-link m-2 menu-item'>About Us</a>
+                    <Link to='/About'>About Us</Link>
                 </li>
             </ul>
         </div>
     </nav>
+    </div>
   )
 }
 
