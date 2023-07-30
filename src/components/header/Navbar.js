@@ -1,19 +1,12 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+
 import { Link } from 'react-router-dom'
 import './Navbar.css'
-import Shop from '../../pages/Shop'
-import Services from '../../pages/Services'
-import About from '../../pages/About'
+
 
 const Navbar = () => {
   return (
     <div>
-        <Routes>
-            <Route path='/Shop' element={<Shop />} />
-            <Route path='/Services' element={<Services />} />
-            <Route path='/About' element={<About />} />
-        </Routes>
         <nav className='navbar navbar-expand-lg fixed-top nav-menu'>
         <a href='#' className='navbar-brand text-light text-uppercase'><span className='h2 font-weight-bold'>Shoppify</span></a>
         <button className='navbar-toggler nav-button' type='button' data-bs-toggle='collapse' 
