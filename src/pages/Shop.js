@@ -1,12 +1,13 @@
 import React from 'react'
-import Header from '../components/header/Header'
-import Footer from '../components/footer/Footer'
 import Collection from '../components/shopping/Collection'
+import ProductsList from '../components/shopping/ProductsList'
+
 
 const Shop = () => {
   return (
     <div>
       <Collection />
+      <ProductsList />
     </div>
   )
 }
