@@ -1,10 +1,13 @@
 import React from 'react'
+import Body from '../components/body/Body'
+import Customer from '../components/customer/Customer'
 
 
 const Services = () => {
   return (
     <div>
-        <h1>Services</h1>
+        <Body />
+        <Customer />
     </div>
   )
 }
